@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import logo from '../assets/logoULEAM.png';
+import logo from '../assets/LogoULEAM.png';
 import { useNavigate } from 'react-router-dom';
 import '../estilos/Acceso.css';
 
