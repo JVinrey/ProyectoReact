@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
+import logo from '../assets/logoULEAM.png';
 import { useNavigate } from 'react-router-dom';
 import '../estilos/Acceso.css';
-import logo from '../assets/logoULEAM.png';
+
 
 function Login() {
   const navigate = useNavigate();
