@@ -1,0 +1,326 @@
+/* ===== Box sizing global para controlar tamaños y padding ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo (body) */
+/* Fuente moderna y legible, fondo gris muy claro y texto en gris oscuro */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente limpia y legible */
+  background-color: #f5f5f5; /* Fondo gris claro, cómodo a la vista */
+  color: #333; /* Texto en gris oscuro para buen contraste y legibilidad */
+}
+
+/* Contenedor principal que agrupa sidebar y contenido principal */
+/* Flexbox para layout horizontal, altura total de la pantalla */
+.container {
+  display: flex; /* Usamos flexbox para organizar sidebar y main uno al lado del otro */
+  height: 100vh; /* Altura completa de la ventana del navegador */
+}
+
+/* Sidebar lateral */
+/* Ancho fijo, fondo rojo oscuro de ULEAM, texto blanco, padding interno */
+/* Contenido centrado vertical y horizontalmente */
+.sidebar {
+  width: 280px; /* Ancho fijo para sidebar */
+  background-color: #b22222; /* Color rojo institucional */
+  color: #fff; /* Texto blanco */
+  padding: 30px 20px; /* Espaciado interno arriba/abajo y lados */
+  display: flex; /* Flexbox para organizar contenido */
+  flex-direction: column; /* Apila elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+}
+
+/* Imagen dentro del sidebar */
+/* Tamaño fijo, forma circular y margen inferior para separar de texto */
+.sidebar img {
+  width: 110%; /* Ancho fijo */
+  height: 40%; /* Alto fijo para mantener forma cuadrada antes del border-radius */
+  border-radius: 50%; /* Imagen circular */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Título dentro del sidebar */
+.sidebar h2 {
+  font-size: 20px; /* Tamaño de fuente mediano */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Párrafos dentro del sidebar */
+/* Espaciado pequeño, tamaño de letra pequeño y texto centrado */
+.sidebar p {
+  margin: 4px 0; /* Margen vertical pequeño */
+  font-size: 14px; /* Texto pequeño */
+  text-align: center; /* Centrar texto */
+}
+
+/* Contenido principal (main) */
+/* Toma todo el espacio disponible, con padding y fondo blanco */
+/* Sombra sutil para separación visual del sidebar */
+.main {
+  flex-grow: 1; /* Ocupa el resto del espacio horizontal */
+  padding: 20px 30px; /* Menor padding para evitar que el contenido sobresalga */
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: -2px 0 5px rgba(0,0,0,0.05); /* Sombra a la izquierda para efecto de separación */
+}
+
+/* Formulario dentro del main */
+/* Máximo ancho para no ser muy ancho, centrado, fondo blanco y borde con sombra suave */
+.main form {
+  max-width: 400px; /* Ancho máximo para el formulario */
+  margin: auto; /* Centra horizontalmente */
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 30px; /* Espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Sombra suave */
+}
+
+/* Título dentro del main */
+/* Color rojo institucional, tamaño medio y centrado */
+.main h1 {
+  color: #b22222; /* Rojo ULEAM */
+  font-size: 22px; /* Tamaño de fuente adecuado para título */
+  margin-bottom: 20px; /* Margen inferior para separar del formulario */
+  text-align: center; /* Centrado del texto */
+}
+
+/* Estilo para etiquetas (label) */
+/* Se muestran como bloques con margen superior y negrita para destacarlas */
+label {
+  display: block; /* Ocupan toda la línea */
+  margin-top: 15px; /* Margen superior para separación */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Select dentro del formulario */
+/* Ocupan todo el ancho, padding para tamaño cómodo, borde y bordes redondeados */
+select {
+  width: 100%; /* Ancho completo */
+  padding: 8px; /* Espacio interno */
+  margin-top: 5px; /* Margen superior pequeño para separar de label */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Botón principal */
+/* Margen arriba para separar, ancho completo, fondo rojo, texto blanco, sin bordes */
+/* Padding cómodo, bordes redondeados, tamaño de texto legible y cursor pointer */
+/* Transición suave para el efecto hover */
+button {
+  margin-top: 25px; /* Espacio arriba para separarlo de los campos */
+  width: 100%; /* Ancho completo para mejor usabilidad */
+  background-color: #b22222; /* Color rojo ULEAM */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 12px; /* Padding cómodo para un botón grande */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Texto legible */
+  cursor: pointer; /* Cursor cambia a mano para indicar clicable */
+  transition: background-color 0.3s; /* Transición suave para cambio de color */
+}
+
+/* Efecto hover del botón */
+/* Se oscurece el rojo cuando el cursor está sobre el botón */
+button:hover {
+  background-color: #8b1a1a; /* Rojo más oscuro para feedback visual */
+}
+
+/* Títulos h2 */
+/* Centrado */
+h2 {
+  text-align: center;
+}
+
+/* Tabla para mostrar horario */
+/* Ocupa todo el ancho, sin espacios entre celdas, margen arriba para separar */
+/* Tamaño de fuente un poco pequeño para que quepa información */
+table {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  border-collapse: collapse; /* Elimina espacios entre bordes de celdas */
+  margin-top: 15px; /* Espacio arriba para separar del contenido anterior */
+  font-size: 15px; /* Tamaño de texto legible pero compacto */
+  background-color: #fff; /* Fondo blanco */
+}
+
+/* Encabezados de tabla */
+/* Fondo rojo institucional con texto blanco y bordes más oscuros */
+th {
+  background-color: #b22222; /* Color rojo ULEAM */
+  color: #fff; /* Texto blanco para contraste */
+  padding: 10px; /* Espacio interno */
+  font-weight: bold; /* Negrita para destacar */
+  border: 1px solid #8b1a1a; /* Borde rojo oscuro para definición */
+}
+
+/* Celdas normales */
+/* Bordes claros, texto centrado y fondo claro */
+td {
+  border: 1px solid #ccc; /* Borde gris claro */
+  text-align: center; /* Texto centrado */
+  padding: 10px; /* Espacio interno */
+  background-color: #f9f9f9; /* Fondo muy claro para filas */
+  color: #333; /* Texto gris oscuro */
+}
+
+/* Filas pares */
+/* Fondo un poco más oscuro para alternar y mejorar legibilidad de filas */
+tr:nth-child(even) td {
+  background-color: #f1f1f1; /* Fondo ligeramente más oscuro para filas pares */
+}
+
+/* Texto pequeño dentro de las celdas */
+/* Color gris medio para diferenciar de texto principal */
+td small {
+  color: #555; /* Gris medio para texto menos importante */
+}
+
+/* Contenedor para crear horario (extra si usas en componente) */
+.crear-horario-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor fila horario para inputs */
+.fila-horario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* Inputs dentro de fila horario */
+.fila-horario input {
+  margin: 4px 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Mensajes de error */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+/* Botones */
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #a81515;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* Contenedor principal */
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* evita scroll inesperado */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: #b22222;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-y: auto; /* scroll si hay mucho contenido */
+}
+
+/* Imagen en sidebar */
+.sidebar img {
+  width: 100%;
+  height: auto;
+  max-width: 180px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Main (contenido) */
+.main {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+  overflow-y: auto; /* scroll interno si contenido es largo */
+  box-sizing: border-box;
+}
+
+/* Formulario */
+form.form-horario {
+  max-width: 450px; /* ajusta aquí el ancho máximo */
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* Inputs y selects */
+select, input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Botones */
+button.btn-agregar {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #b22222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button.btn-agregar:hover {
+  background-color: #8b1a1a;
+}
+
+button.btn-guardar {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #b22222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn-guardar:hover {
+  background-color: #8b1a1a;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Lista materias */
+.dia-materias ul {
+  padding-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}

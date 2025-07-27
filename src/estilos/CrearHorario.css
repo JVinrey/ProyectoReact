@@ -1,0 +1,71 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif; /* Fuente limpia y estándar */
+  background-color: #f0f0f0; /* Fondo gris muy claro */
+  color: #333; /* Texto en gris oscuro para mejor lectura */
+  padding: 20px; /* Espacio interno alrededor del contenido */
+}
+
+/* Estilo para el título principal (h1) */
+h1 {
+  color: #b22222; /* Rojo institucional ULEAM */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: #ffffff; /* Fondo blanco para destacar */
+  border: 2px solid #b22222; /* Borde rojo fuerte */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interno */
+  max-width: 800px; /* Ancho máximo para no extenderse demasiado */
+  margin: 0 auto; /* Centrar horizontalmente en la página */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilo para las etiquetas del formulario */
+label {
+  font-weight: bold; /* Texto en negrita para destacar */
+  display: block; /* Ocupa toda la línea */
+  margin-top: 10px; /* Espacio arriba para separar de otros elementos */
+}
+
+/* Estilos para campos de texto, hora y selects */
+input[type="text"],
+input[type="time"],
+select {
+  width: 100%; /* Ocupan todo el ancho disponible */
+  padding: 8px; /* Espacio interno para facilitar escritura */
+  margin-top: 5px; /* Separación arriba del campo */
+  margin-bottom: 15px; /* Separación abajo para no pegar con siguiente elemento */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para subtítulos dentro del formulario (h3) */
+h3 {
+  color: #b22222; /* Rojo institucional */
+  border-bottom: 1px solid #b22222; /* Línea roja debajo para separación */
+  padding-bottom: 5px; /* Espacio debajo del texto antes de la línea */
+  margin-top: 30px; /* Espacio arriba para separar de secciones anteriores */
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #b22222; /* Fondo rojo */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde visible */
+  padding: 12px 20px; /* Espaciado interno vertical y horizontal */
+  font-size: 16px; /* Tamaño de fuente legible */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima para indicar clicable */
+  display: block; /* Que el botón ocupe toda una línea */
+  margin: 20px auto 0 auto; /* Centrar horizontalmente y margen arriba */
+  transition: background-color 0.3s; /* Transición suave para cambio de color */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+  background-color: #8b1a1a; /* Rojo más oscuro cuando se pasa el mouse */
+}

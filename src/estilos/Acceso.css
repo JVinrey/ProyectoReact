@@ -1,0 +1,80 @@
+.login-container {
+  max-width: 32%;
+  margin: 30px auto;
+  padding: 5% 5%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container img.logo-login {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.login-container h1 { 
+  margin-bottom: 5%;
+  color: #e20505;
+}
+
+.login-container form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.login-container form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d52b1e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container form button:hover {
+  background-color: #b8241a;
+}
+
+.login-container form p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-container form a {
+  color: #1339b8;
+  text-decoration: none;
+}
+
+.login-container form a:hover {
+  text-decoration: underline;
+}
+
+
+.login-container select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 90%;
+    padding: 8% 5%;
+  }
+
+  .login-container img.logo-login {
+    width: 70%;
+  }
+}

@@ -1,0 +1,31 @@
+.header {
+  background-color: #e41e26;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left h2 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.usuario-nombre {
+  font-weight: bold;
+}
+
+.btn-cerrar {
+  background-color: white;
+  color: #e41e26;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
